@@ -2,7 +2,7 @@
 ## Author: Jonas Hoffmann
 
 
-[Wikipedia A*Pathfinfing](https://de.wikipedia.org/wiki/A*-Algorithmus)
+[Wikipedia A*Pathfinding](https://de.wikipedia.org/wiki/A*-Algorithmus)
 
 ____________________________________________________________
 
