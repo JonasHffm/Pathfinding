@@ -64,7 +64,7 @@ return nodes;
 
 
 
-Most [important part](https://github.com/JonasHffm/Pathfinding/blob/master/src/de/jonas/pathfinding/func/Function.java) of the project
+Most [important part](https://github.com/JonasHffm/Pathfinding/blob/master/src/de/jonas/pathfinding/func/Function.java) of the project.
 
 
 
