@@ -5,9 +5,9 @@ ____________________________________________________________
 
 Setting up grid:
 
-Setting start node    -->  Shift + Leftclick on node
-Setting end node      -->  Alt   + Leftclick on node
-Setting barrier nide  -->  Ctrl  + Leftclick on node
+Setting start node    -->  Shift + Leftclick on node\n
+Setting end node      -->  Alt   + Leftclick on node\n
+Setting barrier nide  -->  Ctrl  + Leftclick on node\n
 
 Press start afterwards!
 
