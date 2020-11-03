@@ -24,12 +24,32 @@ ____________________________________________________________
               Check which fCost is the smallest value and take it as new X node.
               
               
-<br/>              
+<br/>             
 > Checked nodes and nodes beside barriers are put in the Closed-Set list.<br/>
 > Nodes in the Open-Set are around the current X node.
 
 
 Most important part of the project:<br/>
 https://github.com/JonasHffm/Pathfinding/blob/master/src/de/jonas/pathfinding/func/Function.java
+
+    public ArrayList<Node> getSurroundingNodes(Node xNode) {
+        ArrayList<Node> nodes = new ArrayList<>();
+        for(int x = -1; x <= 1; x++) {
+            for(int y = -1; y <= 1; y++) {
+                Node c_Node = getNodeFromXY(xNode.getPosX()+x, xNode.getPosY()+y);
+                if(c_Node != null) {
+                    if (!xNode.equals(c_Node)) {
+                        if (!Pathfinding.initializer.getData().getClosedSet().contains(c_Node)) {
+                            if (!c_Node.isBarrier()) {
+                                nodes.add(c_Node);
+                                c_Node.getPanel().setBackground(Color.BLUE);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return nodes;
+    }
 
 
