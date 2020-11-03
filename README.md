@@ -1,5 +1,5 @@
-# Pathfinding
-# Author: Jonas Hoffmann
+# A*Pathfinding
+## Author: Jonas Hoffmann
 
 ____________________________________________________________
 
@@ -64,8 +64,8 @@ return nodes;
 
 
 
-Most important part of the project:<br/>
-https://github.com/JonasHffm/Pathfinding/blob/master/src/de/jonas/pathfinding/func/Function.java
+Most [important part](https://github.com/JonasHffm/Pathfinding/blob/master/src/de/jonas/pathfinding/func/Function.java) of the project
+
 
 
 
