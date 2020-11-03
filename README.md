@@ -5,11 +5,11 @@ ____________________________________________________________
 
 Setting up grid:
 
-Setting start node    -->  Shift + Leftclick on node\n
-Setting end node      -->  Alt   + Leftclick on node\n
-Setting barrier nide  -->  Ctrl  + Leftclick on node\n
-
-Press start afterwards!
+Setting start node    -->  Shift + Leftclick on node<br/>
+Setting end node      -->  Alt   + Leftclick on node<br/>
+Setting barrier nide  -->  Ctrl  + Leftclick on node<br/>
+<br/>
+Press start afterwards!<br/>
 
 ____________________________________________________________
 
@@ -24,5 +24,5 @@ ____________________________________________________________
               Check which fCost is the smallest value and take it as new X node.
               
               
-Checked nodes and nodes beside barriers are put in the Closed-Set list.
+Checked nodes and nodes beside barriers are put in the Closed-Set list.<br/>
 Nodes in the Open-Set are around the current X node.
