@@ -26,6 +26,17 @@ ____________________________________________________________
               
               
 > Checked nodes and nodes beside barriers are put in the Closed-Set list.<br/>
+
+```javascript
+            Pathfinding.initializer.getData().getClosedSet().add(x);
+            
+            for(Node sBCheckNode : getSurroundingNodes(sNode)) {
+                if(sBCheckNode.isBarrier()) {
+                    Pathfinding.initializer.getData().getClosedSet().add(sNode);
+                }
+            }
+```
+
 > Nodes in the Open-Set are around the current X node.
 
 ```javascript
