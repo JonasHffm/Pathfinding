@@ -24,7 +24,7 @@ ____________________________________________________________
               Check which fCost is the smallest value and take it as new X node.
               
               
-<br/>             
+              
 > Checked nodes and nodes beside barriers are put in the Closed-Set list.<br/>
 > Nodes in the Open-Set are around the current X node.
 
