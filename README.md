@@ -1,6 +1,9 @@
 # A*Pathfinding
 ## Author: Jonas Hoffmann
 
+
+[Wikipedia A*Pathfinfing](https://de.wikipedia.org/wiki/A*-Algorithmus)
+
 ____________________________________________________________
 
 Setting up grid:
