@@ -10,7 +10,7 @@ Setting up grid:
 
 Setting start node    -->  Shift + Leftclick on node<br/>
 Setting end node      -->  Alt   + Leftclick on node<br/>
-Setting barrier nide  -->  Ctrl  + Leftclick on node<br/>
+Setting barrier node  -->  Ctrl  + Leftclick on node<br/>
 <br/>
 Press start afterwards!<br/>
 
