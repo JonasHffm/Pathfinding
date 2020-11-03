@@ -28,10 +28,7 @@ ____________________________________________________________
 > Checked nodes and nodes beside barriers are put in the Closed-Set list.<br/>
 > Nodes in the Open-Set are around the current X node.
 
-
-Most important part of the project:<br/>
-https://github.com/JonasHffm/Pathfinding/blob/master/src/de/jonas/pathfinding/func/Function.java
-
+´´´java
     public ArrayList<Node> getSurroundingNodes(Node xNode) {
         ArrayList<Node> nodes = new ArrayList<>();
         for(int x = -1; x <= 1; x++) {
@@ -51,5 +48,11 @@ https://github.com/JonasHffm/Pathfinding/blob/master/src/de/jonas/pathfinding/fu
         }
         return nodes;
     }
+´´´
+
+Most important part of the project:<br/>
+https://github.com/JonasHffm/Pathfinding/blob/master/src/de/jonas/pathfinding/func/Function.java
+
+
 
 
