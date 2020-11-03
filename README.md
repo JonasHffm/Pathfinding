@@ -24,5 +24,11 @@ ____________________________________________________________
               Check which fCost is the smallest value and take it as new X node.
               
               
-Checked nodes and nodes beside barriers are put in the Closed-Set list.<br/>
-Nodes in the Open-Set are around the current X node.
+> Checked nodes and nodes beside barriers are put in the Closed-Set list.<br/>
+> Nodes in the Open-Set are around the current X node.
+
+
+Most important part of the project:<br/>
+https://github.com/JonasHffm/Pathfinding/blob/master/src/de/jonas/pathfinding/func/Function.java
+
+
