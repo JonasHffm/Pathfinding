@@ -71,6 +71,7 @@ public class Node {
                 }else if(e.isControlDown()){
                     barrier = true;
                     setColor(Color.BLACK);
+                    data.getBarrierSet().add(nodeInstance());
                 }else {
                     if(nodeInstance().equals(data.getEndNode())) {
                         data.setEndNode(null);

@@ -5,6 +5,7 @@ import de.jonas.pathfinding.menue.Menue;
 import de.jonas.pathfinding.nodes.Node;
 
 import javax.swing.*;
+import java.nio.file.Path;
 
 public class Frame {
 
@@ -21,6 +22,9 @@ public class Frame {
         this.grid_size = grid_size;
         this.nodeHeightWidth = nodeHeightWidth;
     }
+    public Frame() {
+
+    }
 
     public void open() {
 
@@ -36,7 +40,6 @@ public class Frame {
         menue.addBottom();
         menue.addSide();
         //
-
 
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
@@ -67,5 +70,18 @@ public class Frame {
 
     public int getHeight() {
         return height;
+    }
+
+
+
+    public String getCurrentLevel() {
+        String level = "";
+        level += Pathfinding.initializer.getData().getStartNode().getPosX() + ";" + Pathfinding.initializer.getData().getStartNode().getPosY() + "|";
+        level += Pathfinding.initializer.getData().getEndNode().getPosX() + ";" + Pathfinding.initializer.getData().getEndNode().getPosY() + "|";
+        System.out.println(Pathfinding.initializer.getData().getBarrierSet() + " --------");
+        for(Node node : Pathfinding.initializer.getData().getBarrierSet()) {
+            level = level + node.getPosX() + ";" + node.getPosY() + ":";
+        }
+        return level;
     }
 }
