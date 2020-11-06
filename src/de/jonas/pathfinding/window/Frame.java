@@ -1,5 +1,6 @@
 package de.jonas.pathfinding.window;
 
+import de.jonas.pathfinding.func.Function;
 import de.jonas.pathfinding.main.Pathfinding;
 import de.jonas.pathfinding.menue.Menue;
 import de.jonas.pathfinding.nodes.Node;
@@ -53,7 +54,7 @@ public class Frame {
             for(int y = 0; y < grid_size*nodeHeightWidth; y += nodeHeightWidth) {
                 Node node = new Node(this.frame, this.nodeHeightWidth, x, y);
                 node.spawn();
-                Pathfinding.instance.getInitializer().getData().getOpenSet().add(node);
+                Pathfinding.instance.getInitializer().getData().getOpenSet().add(new Function().getStr(node));
                 Pathfinding.instance.getInitializer().getData().getNodeList().add(node);
             }
         }
@@ -78,7 +79,6 @@ public class Frame {
         String level = "";
         level += Pathfinding.initializer.getData().getStartNode().getPosX() + ";" + Pathfinding.initializer.getData().getStartNode().getPosY() + "|";
         level += Pathfinding.initializer.getData().getEndNode().getPosX() + ";" + Pathfinding.initializer.getData().getEndNode().getPosY() + "|";
-        System.out.println(Pathfinding.initializer.getData().getBarrierSet() + " --------");
         for(Node node : Pathfinding.initializer.getData().getBarrierSet()) {
             level = level + node.getPosX() + ";" + node.getPosY() + ":";
         }

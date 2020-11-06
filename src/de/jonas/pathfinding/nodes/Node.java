@@ -21,8 +21,8 @@ public class Node {
     private int size;
     private int x;
     private int y;
-
     private int posX, posY;
+    private double fCost;
 
     private JPanel panel;
 
@@ -97,10 +97,6 @@ public class Node {
         return barrier;
     }
 
-    public void addToClosed() {
-        Pathfinding.initializer.getData().getClosedSet().add(this);
-        Pathfinding.initializer.getData().getOpenSet().remove(this);
-    }
 
     public void setColor(Color color) {
         this.panel.setBackground(color);
@@ -148,6 +144,22 @@ public class Node {
 
     public JPanel getPanel() {
         return panel;
+    }
+
+    public Node getPrevious() {
+        return previous;
+    }
+
+    public void setPrevious(Node previous) {
+        this.previous = previous;
+    }
+
+    public double getfCost() {
+        return fCost;
+    }
+
+    public void setfCost(double fCost) {
+        this.fCost = fCost;
     }
 
     public void setPanel(JPanel panel) {

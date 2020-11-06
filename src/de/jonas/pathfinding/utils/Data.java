@@ -9,14 +9,14 @@ public class Data {
 
     public ArrayList<Node> nodeList; //ALL AVAILABLE NODES
 
-    private ArrayList<Node> openSet;   //QUEUE NODES
+    private ArrayList<String> openSet;   //QUEUE NODES
 
-    private ArrayList<Node> closedSet;  //CHECKED NODES
-    private ArrayList<Node> crashedSet;  //CRASHED NODES
+    private ArrayList<String> closedSet;  //CHECKED NODES
+    private ArrayList<String> crashedSet;  //CRASHED NODES
 
     private ArrayList<Node> barrierSet; //BARRIER NODES
 
-    private HashMap<Node, Double> bestNodes; //BEST NODES    -> NODE + COST
+    private HashMap<String, Double> bestNodes; //BEST NODES    -> NODE + COST
 
     private boolean started = false;
 
@@ -32,14 +32,6 @@ public class Data {
         this.crashedSet = new ArrayList<>();
     }
 
-    public ArrayList<Node> getOpenSet() {
-        return openSet;
-    }
-
-    public ArrayList<Node> getClosedSet() {
-        return closedSet;
-    }
-
     public void setStartNode(Node startNode) {
         this.startNode = startNode;
     }
@@ -53,13 +45,6 @@ public class Data {
         return endNode;
     }
 
-    public void setOpenSet(ArrayList<Node> openSet) {
-        this.openSet = openSet;
-    }
-
-    public void setClosedSet(ArrayList<Node> closedSet) {
-        this.closedSet = closedSet;
-    }
 
     public ArrayList<Node> getBarrierSet() {
         return barrierSet;
@@ -85,20 +70,36 @@ public class Data {
         this.nodeList = nodeList;
     }
 
-    public HashMap<Node, Double> getBestNodes() {
-        return bestNodes;
+    public ArrayList<String> getOpenSet() {
+        return openSet;
     }
 
-    public void setBestNodes(HashMap<Node, Double> bestNodes) {
-        this.bestNodes = bestNodes;
+    public void setOpenSet(ArrayList<String> openSet) {
+        this.openSet = openSet;
     }
 
-    public ArrayList<Node> getCrashedSet() {
+    public ArrayList<String> getClosedSet() {
+        return closedSet;
+    }
+
+    public void setClosedSet(ArrayList<String> closedSet) {
+        this.closedSet = closedSet;
+    }
+
+    public ArrayList<String> getCrashedSet() {
         return crashedSet;
     }
 
-    public void setCrashedSet(ArrayList<Node> crashedSet) {
+    public void setCrashedSet(ArrayList<String> crashedSet) {
         this.crashedSet = crashedSet;
+    }
+
+    public HashMap<String, Double> getBestNodes() {
+        return bestNodes;
+    }
+
+    public void setBestNodes(HashMap<String, Double> bestNodes) {
+        this.bestNodes = bestNodes;
     }
 }
 

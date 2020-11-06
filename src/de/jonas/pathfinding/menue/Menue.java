@@ -46,18 +46,13 @@ public class Menue {
             public void actionPerformed(ActionEvent e) {
                 if(!Pathfinding.initializer.getData().isStarted()) {
 
-                    //EXAMPLE: 8;7|13;13|8;11:8;11:9;11:9;11:9;10:9;10:10;10:10;10:11;9:10;9:11;9:11;9:12;9:8;12:
-
                     //LEVEL LOAD
                     if(level.getText() != null && !level.getText().equals("")) {
                         loadLevel(level.getText());
                     }
-
                     //START
                     Function function = new Function();
                     function.start();
-
-
                     //LEVEL SAVE
                     if(level.getText() == null || level.getText().equalsIgnoreCase("")) {
                         if (Pathfinding.initializer.getData().getStartNode() == null) {
@@ -68,6 +63,8 @@ public class Menue {
                         }
                         level.setText(new Frame().getCurrentLevel());
                     }
+
+
 
                 }
             }
